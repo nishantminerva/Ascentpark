@@ -11,6 +11,7 @@
 		20C8AD4B26FF628200803EBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8AD4A26FF628200803EBF /* ContentView.swift */; };
 		20C8AD4D26FF628500803EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C8AD4C26FF628500803EBF /* Assets.xcassets */; };
 		20C8AD5026FF628500803EBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C8AD4F26FF628500803EBF /* Preview Assets.xcassets */; };
+		20C8AD5826FF62BF00803EBF /* FollowerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8AD5726FF62BF00803EBF /* FollowerCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		20C8AD4C26FF628500803EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20C8AD4F26FF628500803EBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20C8AD5126FF628500803EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C8AD5726FF62BF00803EBF /* FollowerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				20C8AD4826FF628200803EBF /* Ascentpark_TestApp.swift */,
+				20C8AD5726FF62BF00803EBF /* FollowerCard.swift */,
 				20C8AD4A26FF628200803EBF /* ContentView.swift */,
 				20C8AD4C26FF628500803EBF /* Assets.xcassets */,
 				20C8AD5126FF628500803EBF /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C8AD5826FF62BF00803EBF /* FollowerCard.swift in Sources */,
 				20C8AD4B26FF628200803EBF /* ContentView.swift in Sources */,
 				20C8AD4926FF628200803EBF /* Ascentpark_TestApp.swift in Sources */,
 			);
