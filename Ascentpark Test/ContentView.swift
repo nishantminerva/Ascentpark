@@ -7,6 +7,31 @@
 
 import SwiftUI
 
+class FetchToDo: ObservableObject {
+  // 1.
+  @Published var users = [User]()
+     
+    init() {
+        let url = URL(string: "https://smileelive.webappfactory.co/api/demo-data")!
+        // 2.
+        URLSession.shared.dataTask(with: url) {(data, response, error) in
+            do {
+                if let userData = data {
+                    // 3.
+                    let decodedData = try JSONDecoder().decode(Users.self, from: userData)
+                    DispatchQueue.main.async { [self] in
+                        users = decodedData.data
+                    }
+                } else {
+                    print("No data")
+                }
+            } catch {
+                print("Error")
+            }
+        }.resume()
+    }
+}
+
 struct ContentView: View {
     
     
@@ -17,6 +42,8 @@ struct ContentView: View {
     @State var selectedIndex = 0
     
     let tabBarImageNames = ["house" , "globe" , "dot.radiowaves.left.and.right", "bell" , "pencil"]
+    
+    
     
     var body: some View {
         VStack {
@@ -32,7 +59,14 @@ struct ContentView: View {
                         Text("TEST")
                     }
                 case 2:
-                    FollowerCard()
+                    NavigationView{
+                        VStack {
+                            Followers()
+                            .padding()
+                        }
+                            .navigationTitle("Followers")
+                    }
+                    
                     
                 default:
                     Text("Remaining")
