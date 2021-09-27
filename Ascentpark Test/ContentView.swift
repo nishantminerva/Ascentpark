@@ -8,9 +8,9 @@
 import SwiftUI
 
 class FetchToDo: ObservableObject {
-  // 1.
-  @Published var users = [User]()
-     
+    // 1.
+    @Published var users = [User]()
+    
     init() {
         let url = URL(string: "https://smileelive.webappfactory.co/api/demo-data")!
         // 2.
@@ -59,13 +59,9 @@ struct ContentView: View {
                         Text("TEST")
                     }
                 case 2:
-                    NavigationView{
                         VStack {
                             Followers()
-                            .padding()
                         }
-                            .navigationTitle("Followers")
-                    }
                     
                     
                 default:
@@ -100,7 +96,7 @@ struct ContentView: View {
                             Image(systemName: tabBarImageNames[num])
                                 .font(.system(size: 24, weight: .bold))
                                 .foregroundColor(selectedIndex == num ? Color(.black): .init(white: 0.8))
-                        
+                            
                             
                         }
                         Spacer()
@@ -110,7 +106,7 @@ struct ContentView: View {
                 Button(action: { selectedIndex = 5 }, label:{
                     Spacer()
                     Profile()
-                  Spacer()
+                    Spacer()
                 })
             }
             .padding(.leading, 30)
@@ -122,15 +118,15 @@ struct ContentView: View {
 struct Profile: View {
     var body: some View{
         ZStack{
-        Circle()
-            .fill(Color.pink)
-            .frame(width: 40, height: 40)
-        Image("Image")
-            .resizable()
-            .frame(width: 30, height: 30, alignment: .center)
-            .aspectRatio(contentMode: .fill)
-            .cornerRadius(50)
-            }
+            Circle()
+                .fill(Color.pink)
+                .frame(width: 40, height: 40)
+            Image("Image")
+                .resizable()
+                .frame(width: 30, height: 30, alignment: .center)
+                .aspectRatio(contentMode: .fill)
+                .cornerRadius(50)
+        }
     }
 }
 

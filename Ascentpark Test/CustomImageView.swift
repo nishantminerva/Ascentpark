@@ -16,7 +16,7 @@ struct CustomImageView: View {
     var body: some View {
         Image(uiImage: image)
             .resizable()
-            .frame(width: 70, height: 70, alignment: .center)
+//            .frame(width: 70, height: 70, alignment: .center)
             .aspectRatio(contentMode: .fill)
             .cornerRadius(50)
             .onReceive(imageLoader.$image) { image in

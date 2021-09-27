@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		2089B6C82702474300C89FD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C22702474200C89FD7 /* User.swift */; };
 		2089B6C92702474300C89FD7 /* Followers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C32702474200C89FD7 /* Followers.swift */; };
-		2089B6CA2702474300C89FD7 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C42702474300C89FD7 /* Tag.swift */; };
+		2089B6CA2702474300C89FD7 /* Followings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C42702474300C89FD7 /* Followings.swift */; };
 		2089B6CB2702474300C89FD7 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C52702474300C89FD7 /* Users.swift */; };
 		2089B6CC2702474300C89FD7 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C62702474300C89FD7 /* CustomImageView.swift */; };
 		2089B6CD2702474300C89FD7 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C72702474300C89FD7 /* ImageLoaderService.swift */; };
+		20A136FA2702580100D4E32D /* UserTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A136F92702580100D4E32D /* UserTag.swift */; };
+		20A136FC2702588F00D4E32D /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A136FB2702588F00D4E32D /* Tag.swift */; };
+		20A136FE27025D4700D4E32D /* UsersTagElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A136FD27025D4700D4E32D /* UsersTagElement.swift */; };
 		20C8AD4926FF628200803EBF /* Ascentpark_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8AD4826FF628200803EBF /* Ascentpark_TestApp.swift */; };
 		20C8AD4B26FF628200803EBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8AD4A26FF628200803EBF /* ContentView.swift */; };
 		20C8AD4D26FF628500803EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C8AD4C26FF628500803EBF /* Assets.xcassets */; };
@@ -22,10 +25,13 @@
 /* Begin PBXFileReference section */
 		2089B6C22702474200C89FD7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2089B6C32702474200C89FD7 /* Followers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Followers.swift; sourceTree = "<group>"; };
-		2089B6C42702474300C89FD7 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		2089B6C42702474300C89FD7 /* Followings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Followings.swift; sourceTree = "<group>"; };
 		2089B6C52702474300C89FD7 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		2089B6C62702474300C89FD7 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		2089B6C72702474300C89FD7 /* ImageLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		20A136F92702580100D4E32D /* UserTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTag.swift; sourceTree = "<group>"; };
+		20A136FB2702588F00D4E32D /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		20A136FD27025D4700D4E32D /* UsersTagElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTagElement.swift; sourceTree = "<group>"; };
 		20C8AD4526FF628200803EBF /* Ascentpark Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ascentpark Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C8AD4826FF628200803EBF /* Ascentpark_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ascentpark_TestApp.swift; sourceTree = "<group>"; };
 		20C8AD4A26FF628200803EBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,8 +74,11 @@
 				20C8AD4A26FF628200803EBF /* ContentView.swift */,
 				2089B6C62702474300C89FD7 /* CustomImageView.swift */,
 				2089B6C32702474200C89FD7 /* Followers.swift */,
+				20A136FD27025D4700D4E32D /* UsersTagElement.swift */,
 				2089B6C72702474300C89FD7 /* ImageLoaderService.swift */,
-				2089B6C42702474300C89FD7 /* Tag.swift */,
+				2089B6C42702474300C89FD7 /* Followings.swift */,
+				20A136F92702580100D4E32D /* UserTag.swift */,
+				20A136FB2702588F00D4E32D /* Tag.swift */,
 				2089B6C22702474200C89FD7 /* User.swift */,
 				2089B6C52702474300C89FD7 /* Users.swift */,
 				20C8AD4C26FF628500803EBF /* Assets.xcassets */,
@@ -157,8 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C8AD4B26FF628200803EBF /* ContentView.swift in Sources */,
+				20A136FA2702580100D4E32D /* UserTag.swift in Sources */,
+				20A136FC2702588F00D4E32D /* Tag.swift in Sources */,
+				20A136FE27025D4700D4E32D /* UsersTagElement.swift in Sources */,
 				20C8AD4926FF628200803EBF /* Ascentpark_TestApp.swift in Sources */,
-				2089B6CA2702474300C89FD7 /* Tag.swift in Sources */,
+				2089B6CA2702474300C89FD7 /* Followings.swift in Sources */,
 				2089B6CC2702474300C89FD7 /* CustomImageView.swift in Sources */,
 				2089B6C82702474300C89FD7 /* User.swift in Sources */,
 				2089B6CB2702474300C89FD7 /* Users.swift in Sources */,
