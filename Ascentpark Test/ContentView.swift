@@ -51,7 +51,7 @@ struct ContentView: View {
                 switch selectedIndex {
                 case 0:
                     NavigationView{
-                        Text("Frist")
+                        Followers()
                             .navigationTitle("Followers")
                     }
                 case 1:
@@ -59,9 +59,7 @@ struct ContentView: View {
                         Text("TEST")
                     }
                 case 2:
-                        VStack {
-                            Followers()
-                        }
+                    Text("3rd Screen")
                     
                     
                 default:

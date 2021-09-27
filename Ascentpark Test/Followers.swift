@@ -29,7 +29,7 @@ struct Followers : View {
                             Spacer()
                         }
                         HStack{
-                            Text(item.user_name)
+                            Text("@" + item.user_name)
                                 .foregroundColor(Color(.secondaryLabel))
                                 .font(.system(size: 12))
                             Text(String(item.follow) + " followers")
@@ -38,14 +38,22 @@ struct Followers : View {
                             Spacer()
                         }
                         HStack{
-                            ForEach(0..<4) { num in
-                                CustomImageView(urlString: item.followings.user_tags[num].tag.icon)
-                                    .frame(width: 10, height: 10, alignment: .center)
-                                Text(item.followings.user_tags[num].tag.name)
-                                    .foregroundColor(Color(.tertiaryLabel))
-                                    .font(.system(size: 8))
-                                Spacer()
+                            ZStack{
+                                Capsule()
+                                    .fill(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
+                                    .frame(width: 200, height: 25)
+                                HStack{
+                                ForEach(0..<4) { num in
+                                    CustomImageView(urlString: item.followings.user_tags[num].tag.icon)
+                                        .frame(width: 10, height: 10, alignment: .leading)
+                                    Text(item.followings.user_tags[num].tag.name)
+                                        .foregroundColor(Color(.gray))
+                                        .font(.system(size: 7))
+                                    Spacer()
+                                }
+                                }
                             }
+                            
                         }
                     }
                     .padding(.bottom, 15)
