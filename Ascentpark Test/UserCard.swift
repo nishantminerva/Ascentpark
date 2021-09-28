@@ -35,15 +35,15 @@ struct UserCard : View {
                             //                            UserName
                             Text("@" + item.user_name)
                                 .foregroundColor(Color(.secondaryLabel))
-                                .font(.custom("Poppins-Regular", size: 10))
+                                .font(.custom("Poppins-Regular", size: 12))
                             HStack{
                                 //                                Followers Count
-                                Text("" + String(item.follow))
+                                Text("· " + String(item.follow))
                                     .foregroundColor(Color(.secondaryLabel))
-                                    .font(.custom("Poppins-Bold", size: 10))
+                                    .font(.custom("Poppins-Bold", size: 12))
                                 Text("followers")
                                     .foregroundColor(Color(.secondaryLabel))
-                                    .font(.custom("Poppins-Regular", size: 10))
+                                    .font(.custom("Poppins-Regular", size: 12))
                             }
                             Spacer()
                         }

@@ -52,7 +52,7 @@ struct ContentView: View {
                 case 0:
                     NavigationView{
                         UserCard()
-                            .navigationTitle("⟵Followers")
+                            .navigationTitle("←Followers")
                             .font(.custom("Poppins-Bold", size: 25))
                     }
                 case 1:
