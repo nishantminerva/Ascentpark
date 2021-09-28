@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct FollowersCard : View {
+struct UserCard : View {
     @ObservedObject var fetch = FetchToDo()
     var body: some View{
         List(fetch.users) { item in
@@ -57,7 +57,7 @@ struct FollowersCard : View {
                                     Spacer()
                                     ForEach(0..<4) { num in
                                         if num != 2 {
-                                            
+                            
                                             HStack{
                                             CustomImageView(urlString: item.followings.user_tags[num].tag.icon)
                                                 .frame(width: 14, height: 14, alignment: .trailing)
@@ -68,19 +68,19 @@ struct FollowersCard : View {
                                             }
                                             
                                         }
-                                        Spacer(minLength: 9)
+                                        Spacer()
                                     }
                                 }
                             }
                             
                         }
                     }
-                    .padding(.bottom, 15)
+//                    .padding(.bottom, 15)
                     HStack{
                         Image("Plus")
                             .frame(width: 35, height: 35)
                     }
-                    Spacer()
+//                    Spacer()
                 }
             }
             

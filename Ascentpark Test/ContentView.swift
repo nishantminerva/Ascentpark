@@ -51,8 +51,8 @@ struct ContentView: View {
                 switch selectedIndex {
                 case 0:
                     NavigationView{
-                        FollowersCard()
-                            .navigationTitle("Followers")
+                        UserCard()
+                            .navigationTitle("⟵Followers")
                             .font(.custom("Poppins-Bold", size: 25))
                     }
                 case 1:

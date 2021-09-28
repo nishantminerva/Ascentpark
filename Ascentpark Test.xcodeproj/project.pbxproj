@@ -11,7 +11,7 @@
 		2058AB8B2702E5EB002E2FD9 /* Poppins in Resources */ = {isa = PBXBuildFile; fileRef = 2058AB8A2702E5EB002E2FD9 /* Poppins */; };
 		2058AB8D2702EEC4002E2FD9 /* Group 5187.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2058AB8C2702EEC4002E2FD9 /* Group 5187.pdf */; };
 		2089B6C82702474300C89FD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C22702474200C89FD7 /* User.swift */; };
-		2089B6C92702474300C89FD7 /* FollowersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C32702474200C89FD7 /* FollowersCard.swift */; };
+		2089B6C92702474300C89FD7 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C32702474200C89FD7 /* UserCard.swift */; };
 		2089B6CA2702474300C89FD7 /* Followings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C42702474300C89FD7 /* Followings.swift */; };
 		2089B6CB2702474300C89FD7 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C52702474300C89FD7 /* Users.swift */; };
 		2089B6CC2702474300C89FD7 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C62702474300C89FD7 /* CustomImageView.swift */; };
@@ -30,7 +30,7 @@
 		2058AB8A2702E5EB002E2FD9 /* Poppins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Poppins; sourceTree = "<group>"; };
 		2058AB8C2702EEC4002E2FD9 /* Group 5187.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Group 5187.pdf"; sourceTree = "<group>"; };
 		2089B6C22702474200C89FD7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		2089B6C32702474200C89FD7 /* FollowersCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersCard.swift; sourceTree = "<group>"; };
+		2089B6C32702474200C89FD7 /* UserCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCard.swift; sourceTree = "<group>"; };
 		2089B6C42702474300C89FD7 /* Followings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Followings.swift; sourceTree = "<group>"; };
 		2089B6C52702474300C89FD7 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		2089B6C62702474300C89FD7 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 				20C8AD4826FF628200803EBF /* Ascentpark_TestApp.swift */,
 				20C8AD4A26FF628200803EBF /* ContentView.swift */,
 				2089B6C62702474300C89FD7 /* CustomImageView.swift */,
-				2089B6C32702474200C89FD7 /* FollowersCard.swift */,
+				2089B6C32702474200C89FD7 /* UserCard.swift */,
 				20A136FD27025D4700D4E32D /* UsersTagElement.swift */,
 				2089B6C72702474300C89FD7 /* ImageLoaderService.swift */,
 				2058AB872702E35B002E2FD9 /* Json Structure */,
@@ -195,7 +195,7 @@
 				2089B6C82702474300C89FD7 /* User.swift in Sources */,
 				2089B6CB2702474300C89FD7 /* Users.swift in Sources */,
 				2089B6CD2702474300C89FD7 /* ImageLoaderService.swift in Sources */,
-				2089B6C92702474300C89FD7 /* FollowersCard.swift in Sources */,
+				2089B6C92702474300C89FD7 /* UserCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
