@@ -53,6 +53,7 @@ struct ContentView: View {
                     NavigationView{
                         FollowersCard()
                             .navigationTitle("Followers")
+                            .font(.custom("Poppins-Bold", size: 25))
                     }
                 case 1:
                     ScrollView{

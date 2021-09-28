@@ -16,25 +16,30 @@ struct FollowersCard : View {
                 HStack{
                     ZStack{
                         Circle()
-                            .fill(Color.pink)
-                            .frame(width: 80, height: 80)
+                            .fill(Color.yellow)
+                            .frame(width: 72, height: 72)
                         CustomImageView(urlString: item.profile_picture) // This is where you extract urlString from Model ( transaction.imageUrl)
-                            .frame(width: 70, height: 70, alignment: .center)
+                            .frame(width: 69, height: 69, alignment: .center)
                     }
                     VStack{
                         HStack{
                             Text(item.first_name + " " + item.last_name)
                                 .foregroundColor(.black)
-                                .font(.system(size: 20 , weight: .bold))
+                                .font(.custom("Poppins-SemiBold", size: 16))
                             Spacer()
                         }
                         HStack{
                             Text("@" + item.user_name)
                                 .foregroundColor(Color(.secondaryLabel))
-                                .font(.system(size: 12))
-                            Text(String(item.follow) + " followers")
+                                .font(.custom("Poppins-Regular", size: 10))
+                            HStack{
+                            Text("" + String(item.follow))
                                 .foregroundColor(Color(.secondaryLabel))
-                                .font(.system(size: 12))
+                                .font(.custom("Poppins-Bold", size: 10))
+                            Text("followers")
+                                .foregroundColor(Color(.secondaryLabel))
+                                .font(.custom("Poppins-Regular", size: 10))
+                            }
                             Spacer()
                         }
                         HStack{
@@ -44,12 +49,15 @@ struct FollowersCard : View {
                                     .frame(width: 200, height: 25)
                                 HStack{
                                 ForEach(0..<4) { num in
-                                    CustomImageView(urlString: item.followings.user_tags[num].tag.icon)
-                                        .frame(width: 10, height: 10, alignment: .leading)
-                                    Text(item.followings.user_tags[num].tag.name)
-                                        .foregroundColor(Color(.gray))
-                                        .font(.system(size: 7))
-                                    Spacer()
+                                    if num != 2 {
+                                        CustomImageView(urlString: item.followings.user_tags[num].tag.icon)
+                                            .frame(width: 14, height: 14, alignment: .leading)
+                                        Text(item.followings.user_tags[num].tag.name)
+                                            .foregroundColor(Color(.gray))
+                                            .font(.custom("Raleway-Regular", size: 12))
+                                        Spacer()
+                                    }
+                                    
                                 }
                                 }
                             }
@@ -61,7 +69,7 @@ struct FollowersCard : View {
                         ZStack{
                             Circle()
                                 .fill(Color.yellow)
-                                .frame(width: 40, height: 40)
+                                .frame(width: 35, height: 35)
                             Image(systemName: "person.badge.plus")
                                 .font(.system(size: 24, weight: .bold))
                                 .foregroundColor(.pink)

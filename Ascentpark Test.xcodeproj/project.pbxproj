@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2058AB892702E5CA002E2FD9 /* Raleway in Resources */ = {isa = PBXBuildFile; fileRef = 2058AB882702E5CA002E2FD9 /* Raleway */; };
+		2058AB8B2702E5EB002E2FD9 /* Poppins in Resources */ = {isa = PBXBuildFile; fileRef = 2058AB8A2702E5EB002E2FD9 /* Poppins */; };
 		2089B6C82702474300C89FD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C22702474200C89FD7 /* User.swift */; };
 		2089B6C92702474300C89FD7 /* FollowersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C32702474200C89FD7 /* FollowersCard.swift */; };
 		2089B6CA2702474300C89FD7 /* Followings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089B6C42702474300C89FD7 /* Followings.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2058AB882702E5CA002E2FD9 /* Raleway */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Raleway; sourceTree = "<group>"; };
+		2058AB8A2702E5EB002E2FD9 /* Poppins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Poppins; sourceTree = "<group>"; };
 		2089B6C22702474200C89FD7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2089B6C32702474200C89FD7 /* FollowersCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersCard.swift; sourceTree = "<group>"; };
 		2089B6C42702474300C89FD7 /* Followings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Followings.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				2089B6C72702474300C89FD7 /* ImageLoaderService.swift */,
 				2058AB872702E35B002E2FD9 /* Json Structure */,
 				20C8AD4C26FF628500803EBF /* Assets.xcassets */,
+				2058AB8A2702E5EB002E2FD9 /* Poppins */,
+				2058AB882702E5CA002E2FD9 /* Raleway */,
 				20C8AD5126FF628500803EBF /* Info.plist */,
 				20C8AD4E26FF628500803EBF /* Preview Content */,
 			);
@@ -161,6 +167,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2058AB8B2702E5EB002E2FD9 /* Poppins in Resources */,
+				2058AB892702E5CA002E2FD9 /* Raleway in Resources */,
 				20C8AD5026FF628500803EBF /* Preview Assets.xcassets in Resources */,
 				20C8AD4D26FF628500803EBF /* Assets.xcassets in Resources */,
 			);
