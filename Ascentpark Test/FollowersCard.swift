@@ -54,19 +54,21 @@ struct FollowersCard : View {
                                     .fill(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
                                     .frame(height: 26, alignment: .trailing)
                                 HStack{
+                                    Spacer()
                                     ForEach(0..<4) { num in
                                         if num != 2 {
+                                            
                                             HStack{
                                             CustomImageView(urlString: item.followings.user_tags[num].tag.icon)
                                                 .frame(width: 14, height: 14, alignment: .trailing)
                                             Text(item.followings.user_tags[num].tag.name)
                                                 .foregroundColor(Color(.gray))
                                                 .font(.custom("Raleway-Regular", size: 12))
-                                                .frame(height: 14, alignment: .trailing)
+                                                .frame(height: 14)
                                             }
                                             
                                         }
-//                                        Spacer(minLength: 9)
+                                        Spacer(minLength: 9)
                                     }
                                 }
                             }
