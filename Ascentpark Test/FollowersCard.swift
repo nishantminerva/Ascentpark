@@ -46,15 +46,16 @@ struct FollowersCard : View {
                             ZStack{
                                 Capsule()
                                     .fill(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
-                                    .frame(width: 200, height: 25)
+                                    .frame(width: 184, height: 26)
                                 HStack{
                                 ForEach(0..<4) { num in
                                     if num != 2 {
                                         CustomImageView(urlString: item.followings.user_tags[num].tag.icon)
-                                            .frame(width: 14, height: 14, alignment: .leading)
+                                            .frame(width: 14, height: 14, alignment: .trailing)
                                         Text(item.followings.user_tags[num].tag.name)
                                             .foregroundColor(Color(.gray))
                                             .font(.custom("Raleway-Regular", size: 12))
+                                            .frame(height: 14)
                                         Spacer()
                                     }
                                     
@@ -66,14 +67,8 @@ struct FollowersCard : View {
                     }
                     .padding(.bottom, 15)
                     HStack{
-                        ZStack{
-                            Circle()
-                                .fill(Color.yellow)
+                            Image("Plus")
                                 .frame(width: 35, height: 35)
-                            Image(systemName: "person.badge.plus")
-                                .font(.system(size: 24, weight: .bold))
-                                .foregroundColor(.pink)
-                        }
                     }
                     Spacer()
                 }
