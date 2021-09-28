@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Followers : View {
+struct FollowersCard : View {
     @ObservedObject var fetch = FetchToDo()
     var body: some View{
         List(fetch.users) { item in

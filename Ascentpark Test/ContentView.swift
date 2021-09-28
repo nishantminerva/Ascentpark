@@ -51,7 +51,7 @@ struct ContentView: View {
                 switch selectedIndex {
                 case 0:
                     NavigationView{
-                        Followers()
+                        FollowersCard()
                             .navigationTitle("Followers")
                     }
                 case 1:
