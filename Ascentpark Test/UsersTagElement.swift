@@ -2,7 +2,7 @@
 //  UserstagElement.swift
 //  Ascentpark Test
 //
-//  Created by Satyam Kumar on 28/09/21.
+//  Created by Nishant Kumar on 28/09/21.
 //
 
 import Foundation
